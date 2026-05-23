@@ -48,7 +48,7 @@ svg {
 
 .hero-frame {
   position: relative;
-  min-height: 690px;
+  min-height: 720px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.26);
   border-radius: 8px;
@@ -162,6 +162,7 @@ svg {
   min-height: 560px;
   width: min(100% - 96px, 1010px);
   margin: 26px auto 0;
+  padding-bottom: 52px;
   display: grid;
   grid-template-columns: minmax(0, 0.98fr) minmax(320px, 0.82fr);
   align-items: center;
@@ -294,15 +295,15 @@ h3 {
 }
 
 .stats {
-  width: min(100%, 445px);
-  margin-top: 38px;
+  width: min(100%, 360px);
+  margin-top: 30px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.045);
 }
 
 .stats article {
   flex: 1;
-  min-height: 86px;
+  min-height: 78px;
   padding: 16px 18px;
   border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
