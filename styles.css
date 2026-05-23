@@ -108,6 +108,12 @@ svg {
   letter-spacing: 0;
 }
 
+.logo-empty {
+  width: 36px;
+  height: 1px;
+  pointer-events: none;
+}
+
 .nav-links {
   display: flex;
   justify-content: center;
