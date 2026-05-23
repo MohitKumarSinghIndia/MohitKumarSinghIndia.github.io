@@ -94,11 +94,7 @@ svg {
   z-index: 4;
   width: min(100% - 70px, 1020px);
   min-height: 86px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 28px;
+  margin: 20px auto 0;
 }
 
 .logo {
