@@ -363,65 +363,24 @@ h3 {
 
 .portrait {
   position: relative;
-  width: 250px;
-  height: 360px;
-  filter: grayscale(1);
+  z-index: 1;
+  width: calc(100% - 56px);
+  height: calc(100% - 56px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-.avatar-head,
-.avatar-body,
-.headset,
-.controller {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.avatar-head {
-  top: 50px;
-  width: 92px;
-  height: 108px;
-  border-radius: 45% 45% 48% 48%;
-  background: linear-gradient(135deg, #d7d0c9, #6b6764);
-}
-
-.headset {
-  top: 72px;
-  width: 132px;
-  height: 44px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #0d0d0e, #353236);
-  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.08);
-  z-index: 2;
-}
-
-.avatar-body {
-  bottom: 0;
-  width: 230px;
-  height: 235px;
-  border-radius: 46% 46% 10% 10%;
-  background:
-    linear-gradient(115deg, transparent 0 41%, rgba(255, 255, 255, 0.24) 42% 44%, transparent 45%),
-    linear-gradient(135deg, #48484b, #111112 60%);
-}
-
-.controller {
-  bottom: 86px;
-  width: 50px;
-  height: 34px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 18px 18px 12px 12px;
-}
-
-.controller.left {
-  left: 31px;
-  transform: rotate(-20deg);
-}
-
-.controller.right {
-  left: auto;
-  right: 18px;
-  transform: rotate(20deg);
+.portrait img {
+  display: block;
+  width: auto;
+  height: 150%;
+  object-fit: contain;
+  object-position: center bottom;
+  transform: translateY(18%);
+  filter: grayscale(1) drop-shadow(0 24px 34px rgba(0, 0, 0, 0.42));
 }
 
 .orbit {
@@ -864,23 +823,8 @@ h3 {
   }
 
   .portrait {
-    width: 190px;
-    height: 275px;
-  }
-
-  .avatar-head {
-    width: 72px;
-    height: 82px;
-  }
-
-  .headset {
-    width: 104px;
-    height: 34px;
-  }
-
-  .avatar-body {
-    width: 178px;
-    height: 178px;
+    width: calc(100% - 56px);
+    height: calc(100% - 56px);
   }
 
   .orbit-one {
