@@ -4,11 +4,11 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
-  background: var(--bg);
+  object-fit: cover;
   z-index: 5;
+  transition: transform 300ms ease;
 }
+.project-open:hover .project-thumbnail { transform: scale(1.025); }
 .custom-art { background: linear-gradient(135deg, #35432e, #20291b); }
 .custom-art > svg { position: absolute; inset: 35%; width: 30%; height: 30%; }
 .project-media-controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
@@ -34,3 +34,4 @@
   .project-dialog .dialog-close { top: -15px; margin: -24px -12px 0 0; }
   .project-dialog.has-media { padding-inline: 20px; }
 }
+@media (prefers-reduced-motion: reduce) { .project-thumbnail { transition: none; } }

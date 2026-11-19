@@ -9,10 +9,10 @@ All project content lives in [`assets/data/projects.js`](../assets/data/projects
 
 ```js
 "thumbnail": "assets/images/projects/magnet-madness.webp",
-"thumbnailAlt": "Magnet Madness cover art with a glowing magnet and colorful cubes",
+"thumbnailAlt": "Magnet Madness multiplayer game board",
 ```
 
-WebP, JPG, and PNG work. Keep names lowercase with hyphens. Images are centered and shown in full without cropping or hover zoom. Square or portrait images have dark space on the sides of the wide card. Use a 16:9 landscape image, ideally 1200 × 675 pixels, to fill more of the card. This behavior is controlled by `.project-thumbnail` in `assets/css/media.css`.
+Use a 16:9 landscape screenshot, ideally 1200 × 675 pixels. WebP, JPG, and PNG work. Keep names lowercase with hyphens. Images fill their card and crop at the edges. To show the whole image instead, change `.project-thumbnail` to `object-fit: contain` in `assets/css/media.css`.
 
 Leave `thumbnail` as `""` to use the existing illustrated cover. A missing or broken custom image also falls back to the illustration. No actual game screenshots are included yet.
 
