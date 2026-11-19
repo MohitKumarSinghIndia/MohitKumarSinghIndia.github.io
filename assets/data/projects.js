@@ -33,8 +33,8 @@ window.PORTFOLIO_PROJECTS = [
     ],
     "label": "GAME DEVELOPMENT",
     "summary": "A little strategy. A lot of attraction. Turn-based multiplayer with satisfying, physics-driven interactions.",
-    "thumbnail": "",
-    "thumbnailAlt": "",
+    "thumbnail": "assets/images/projects/magnet-madness.webp",
+    "thumbnailAlt": "Magnet Madness gameplay",
     "video": null,
     "webglUrl": "",
     "links": []
