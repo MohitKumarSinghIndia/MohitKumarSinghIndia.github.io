@@ -31,7 +31,7 @@ window.PORTFOLIO_PROJECTS = [
       "ScriptableObjects",
       "Game Economy"
     ],
-    "label": "GAME DEVELOPMENT",
+    "label": "2D GAME DEVELOPMENT",
     "summary": "A little strategy. A lot of attraction. Turn-based multiplayer with satisfying, physics-driven interactions.",
     "thumbnail": "assets/images/projects/magnet-madness.webp",
     "thumbnailAlt": "Magnet Madness gameplay",
@@ -64,11 +64,11 @@ window.PORTFOLIO_PROJECTS = [
       "Unity XR",
       "Meta SDK",
       "Photon Fusion",
-      "Spatial Anchors",
+      "AWS S3",
       "Firebase",
-      "Quest"
+      "Meta Quest"
     ],
-    "label": "IMMERSIVE LEARNING",
+    "label": "AR / VR DEVELOPMENT",
     "summary": "Bring engineering off the page and into your space. Assemble, explore, and learn together in mixed reality.",
     "thumbnail": "",
     "thumbnailAlt": "",
@@ -108,8 +108,8 @@ window.PORTFOLIO_PROJECTS = [
     "id": "slots",
     "slug": "slot-machine",
     "category": "games",
-    "title": "Slot Machine Game",
-    "type": "Gameplay Systems / Windows",
+    "title": "Wishing Dragon",
+    "type": "2D Game Development - Windows",
     "date": "",
     "intro": "A Windows game that brings reel animations and a complete set of slot mechanics into one cohesive Unity experience.",
     "details": [
@@ -126,11 +126,18 @@ window.PORTFOLIO_PROJECTS = [
       "Scatter Rewards",
       "Free Spins"
     ],
-    "label": "GAMEPLAY SYSTEMS",
+    "label": "2D GAME DEVELOPMENT",
     "summary": "A complete gameplay loop with dynamic reels, wild symbols, multipliers, and bonus free spins.",
-    "thumbnail": "",
-    "thumbnailAlt": "",
-    "video": null,
+    "thumbnail": "assets/images/projects/wishing-dragon.webp",
+    "thumbnailAlt": "Wishing Dragon gameplay",
+    "video": {
+      "type": "file",
+      "src": "assets/videos/wishing-dragon.mp4",
+      "poster": "",
+      "captions": "",
+      "language": "en",
+      "captionLabel": "English"
+    },
     "webglUrl": "",
     "links": []
   },
