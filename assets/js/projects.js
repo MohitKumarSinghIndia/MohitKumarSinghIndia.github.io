@@ -34,6 +34,13 @@
     return video?.type === 'youtube' && /^[a-zA-Z0-9_-]{11}$/.test(video.id || '') ? video.id : null;
   }
 
+  function availableMedia(project) {
+    return [
+      ['video', 'Watch video', youtubeId(project.video) || (project.video?.type === 'file' && mediaUrl(project.video.src))],
+      ['webgl', 'Play WebGL', mediaUrl(project.webglUrl)]
+    ].filter(([, , available]) => available);
+  }
+
   function tags(items) {
     return items.map(tag => element('span', '', tag));
   }
@@ -73,16 +80,32 @@
     button.setAttribute('aria-label', `Explore ${project.title}`);
     button.setAttribute('aria-haspopup', 'dialog');
     const info = element('div', 'project-info');
-    const title = element('div');
+    const title = element('div', 'project-heading');
     title.append(element('p', 'project-type', project.label), element('h3', '', project.title));
+    const actions = element('div', 'project-card-actions');
+    for (const [kind, label] of availableMedia(project)) {
+      const action = element('button', 'media-button project-media-action', label);
+      action.type = 'button';
+      action.setAttribute('aria-label', `${label} — ${project.title}`);
+      action.setAttribute('aria-haspopup', 'dialog');
+      action.addEventListener('click', () => openProject(project, action, kind));
+      actions.append(action);
+    }
+    const details = element('button', 'project-details');
+    details.type = 'button';
+    details.setAttribute('aria-label', `Explore ${project.title}`);
+    details.setAttribute('aria-haspopup', 'dialog');
     const plus = element('span', 'project-plus', '+');
     plus.setAttribute('aria-hidden', 'true');
-    info.append(title, plus);
-    button.append(artwork(project), info);
+    details.append(plus);
+    details.addEventListener('click', () => openProject(project, details));
+    actions.append(details);
+    info.append(title, actions);
+    button.append(artwork(project));
     button.addEventListener('click', () => openProject(project, button));
     const tagList = element('div', 'tags');
     tagList.append(...tags(project.tags.slice(0, 3)));
-    card.append(button, element('p', 'project-summary', project.summary), tagList);
+    card.append(button, info, element('p', 'project-summary', project.summary), tagList);
     return card;
   }
 
@@ -165,8 +188,7 @@
     resources.replaceChildren();
     const videoAvailable = youtubeId(project.video) || (project.video?.type === 'file' && mediaUrl(project.video.src));
     const webglAvailable = mediaUrl(project.webglUrl);
-    for (const [kind, label, available] of [['video', 'Watch video', videoAvailable], ['webgl', 'Play WebGL', webglAvailable]]) {
-      if (!available) continue;
+    for (const [kind, label] of availableMedia(project)) {
       const button = element('button', 'media-button', label);
       button.type = 'button';
       button.dataset.media = kind;
@@ -189,7 +211,7 @@
     resources.hidden = !resources.children.length;
   }
 
-  function openProject(project, button) {
+  function openProject(project, button, mediaKind) {
     trigger = button;
     stopMedia();
     dialog.classList.remove('has-media');
@@ -203,6 +225,14 @@
     dialog.showModal();
     dialog.scrollTop = 0;
     document.body.classList.add('modal-open');
+    if (mediaKind) {
+      const mediaButton = controls.querySelector(`[data-media="${mediaKind}"]`);
+      if (mediaButton) {
+        playMedia(project, mediaKind, mediaButton);
+        mediaButton.focus({preventScroll: true});
+        player.scrollIntoView({block: 'nearest'});
+      }
+    }
   }
 
   grid.replaceChildren(...projects.map(renderCard));

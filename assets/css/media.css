@@ -22,6 +22,13 @@
   font-size: 14px;
 }
 .media-button:hover, .media-button[aria-pressed="true"] { background: var(--orange); border-color: var(--orange); color: var(--bg); }
+.project-card .project-info { gap: 12px; flex-wrap: wrap; }
+.project-heading { flex: 1 1 180px; min-width: 0; }
+.project-card-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.project-media-action { padding: 9px 12px; white-space: nowrap; }
+.project-details { display: grid; place-items: center; min-width: 44px; min-height: 44px; padding: 0; background: transparent; }
+.project-details:hover .project-plus, .project-details:focus-visible .project-plus { background: var(--orange); color: var(--bg); border-color: var(--orange); }
+.project-card-actions button:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
 .project-player { margin-top: 18px; background: #0c0e0a; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
 .embedded-player { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; object-fit: contain; }
 .media-status { font-size: 13px; color: #b8c3a6; margin-top: 12px; }

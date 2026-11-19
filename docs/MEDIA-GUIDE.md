@@ -2,6 +2,8 @@
 
 All project content lives in [`assets/data/projects.js`](../assets/data/projects.js). You do not need to edit the card HTML or application code. Keep the existing `window.PORTFOLIO_PROJECTS = [...]` wrapper and edit the objects inside it. Every project needs a unique `id`. Existing artwork is associated with that id.
 
+Project cards automatically show **Watch video** and **Play WebGL** beside the title when their `video` and `webglUrl` fields are configured. These buttons open the project's player directly. The thumbnail and **+** button still open the project details. Buttons wrap below the title when space is limited; missing media stays hidden.
+
 ## Replace a thumbnail
 
 1. Copy your screenshot into `assets/images/projects/`, for example `magnet-madness.webp`.
