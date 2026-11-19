@@ -98,7 +98,7 @@ window.PORTFOLIO_PROJECTS = [
     ],
     "label": "2D GAME DEVELOPMENT",
     "summary": "A familiar arcade challenge, built around crisp controls, precise timing, and the urge to try again.",
-    "thumbnail": "Assets/images/projects/flappy-bird.webp",
+    "thumbnail": "assets/images/projects/flappy-bird.webp",
     "thumbnailAlt": "Flappy Bird gameplay",
     "video": null,
     "webglUrl": "",
