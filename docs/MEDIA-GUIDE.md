@@ -22,6 +22,8 @@ To replace it again later, overwrite the file with the same name and push your c
 
 ## Add an MP4 video
 
+GitHub Pages does not resolve Git LFS pointers into videos. For the MP4 files stored with Git LFS in this repository, use the full `https://media.githubusercontent.com/media/MohitKumarSinghIndia/MohitKumarSinghIndia.github.io/main/assets/videos/FILENAME.mp4` URL as `video.src`. Both current videos use this URL so the player receives the actual MP4. A direct video URL from another host also works. Relative video paths are suitable for files stored in regular Git.
+
 Copy your video into `assets/videos/`. Exporting an MP4 with H.264 video and AAC audio is a broadly compatible choice. Replace `"video": null` in the project with:
 
 ```js

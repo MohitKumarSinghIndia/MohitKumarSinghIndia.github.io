@@ -37,7 +37,7 @@ window.PORTFOLIO_PROJECTS = [
     "thumbnailAlt": "Magnet Madness gameplay",
     "video": {
       "type": "file",
-      "src": "assets/videos/magnet-madness.mp4",
+      "src": "https://media.githubusercontent.com/media/MohitKumarSinghIndia/MohitKumarSinghIndia.github.io/main/assets/videos/magnet-madness.mp4",
       "poster": "",
       "captions": "",
       "language": "en",
@@ -132,7 +132,7 @@ window.PORTFOLIO_PROJECTS = [
     "thumbnailAlt": "Wishing Dragon gameplay",
     "video": {
       "type": "file",
-      "src": "assets/videos/wishing-dragon.mp4",
+      "src": "https://media.githubusercontent.com/media/MohitKumarSinghIndia/MohitKumarSinghIndia.github.io/main/assets/videos/wishing-dragon.mp4",
       "poster": "",
       "captions": "",
       "language": "en",
