@@ -35,7 +35,14 @@ window.PORTFOLIO_PROJECTS = [
     "summary": "A little strategy. A lot of attraction. Turn-based multiplayer with satisfying, physics-driven interactions.",
     "thumbnail": "assets/images/projects/magnet-madness.webp",
     "thumbnailAlt": "Magnet Madness gameplay",
-    "video": "assets/videos/magnet-madness.mp4",
+    "video": {
+      "type": "file",
+      "src": "assets/videos/magnet-madness.mp4",
+      "poster": "",
+      "captions": "",
+      "language": "en",
+      "captionLabel": "English"
+    },
     "webglUrl": "",
     "links": []
   },
