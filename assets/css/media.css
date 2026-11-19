@@ -1,0 +1,37 @@
+/* Optional custom thumbnails and project media. */
+.project-thumbnail {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 5;
+  transition: transform 300ms ease;
+}
+.project-open:hover .project-thumbnail { transform: scale(1.025); }
+.custom-art { background: linear-gradient(135deg, #35432e, #20291b); }
+.custom-art > svg { position: absolute; inset: 35%; width: 30%; height: 30%; }
+.project-media-controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.project-media-controls[hidden], .project-player[hidden], .project-resource-links[hidden], .stop-media[hidden] { display: none; }
+.media-button {
+  padding: 9px 16px;
+  border: 1px solid #63714f;
+  border-radius: 5px;
+  color: var(--text);
+  background: #293322;
+  font-size: 14px;
+}
+.media-button:hover, .media-button[aria-pressed="true"] { background: var(--orange); border-color: var(--orange); color: var(--bg); }
+.project-player { margin-top: 18px; background: #0c0e0a; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.embedded-player { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; object-fit: contain; }
+.media-status { font-size: 13px; color: #b8c3a6; margin-top: 12px; }
+.media-status:empty { display: none; }
+.project-resource-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 20px 0 26px; }
+.project-dialog .project-resource-links .text-link { margin-top: 0; }
+.project-dialog.has-media { max-width: 1000px; }
+.project-dialog .dialog-close { position: sticky; top: -20px; float: right; margin: -30px -30px 0 0; z-index: 5; background: #1a1e17; border-radius: 50%; }
+@media (max-width: 600px) {
+  .project-dialog .dialog-close { top: -15px; margin: -24px -12px 0 0; }
+  .project-dialog.has-media { padding-inline: 20px; }
+}
+@media (prefers-reduced-motion: reduce) { .project-thumbnail { transition: none; } }

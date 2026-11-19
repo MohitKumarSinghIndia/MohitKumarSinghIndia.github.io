@@ -3,285 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Mohit Kumar Singh, Unity developer specializing in multiplayer, VR, AR, and mixed reality experiences.">
-  <title>Mohit Kumar Singh | Unity Developer</title>
+  <meta name="theme-color" content="#101110">
+  <meta name="description" content="Mohit Kumar Singh — Unity developer building multiplayer games, immersive AR/VR experiences, and connected applications. Explore selected work and get in touch.">
+  <title>Mohit Kumar Singh — Unity & XR Developer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+  <script src="assets/data/projects.js" defer></script>
+  <script src="assets/js/project-art.js" defer></script>
+  <script src="assets/js/projects.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </head>
-<body>
-  <main class="page-shell" id="top">
-    <section class="hero-frame" aria-labelledby="hero-title">
-      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
-
-      <header class="site-header">
-        <a class="logo logo-empty" href="#top" aria-label="Mohit Kumar Singh home"></a>
-        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
-          <i data-lucide="menu"></i>
-        </button>
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#top">Home</a>
-          <a href="#services">Services</a>
-          <a href="#about">About me</a>
-          <a href="#projects">Portfolio</a>
-          <a href="#contact">Contact me</a>
-        </nav>
-      </header>
-
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="intro">Hi, I am</p>
-          <p class="name">Mohit Kumar Singh</p>
-          <h1 id="hero-title">Unity Developer</h1>
-          <p class="summary">
-            Unity Developer at iXR Labs crafting immersive AR/VR applications, multiplayer gameplay systems, and
-            high-performance interactive experiences using Unity, C#, Photon Fusion, Firebase, AWS, and REST APIs.
-          </p>
-
-          <div class="socials" aria-label="Profile links">
-            <a href="mailto:Mohitkumarsingh.india@gmail.com" aria-label="Email Mohit"><i data-lucide="mail"></i></a>
-            <a href="tel:+919759734847" aria-label="Call Mohit"><i data-lucide="phone"></i></a>
-            <a href="https://www.linkedin.com/in/mohit-kumar-singh-01/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><i data-lucide="briefcase-business"></i></a>
-            <a href="https://github.com/MohitKumarSingh-01" target="_blank" rel="noreferrer" aria-label="GitHub profile"><i data-lucide="code"></i></a>
-          </div>
-
-          <div class="hero-actions">
-            <a class="button primary" href="mailto:Mohitkumarsingh.india@gmail.com">Hire Me</a>
-            <a class="button ghost" href="assets/Mohit_Kumar_Singh_Resume.pdf" download>Download CV</a>
-          </div>
-
-          <div class="stats" aria-label="Career highlights">
-            <article>
-              <strong>3+</strong>
-              <span>Years Unity experience</span>
-            </article>
-            <article>
-              <strong>6+</strong>
-              <span>Projects across games and web</span>
-            </article>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="Mohit Kumar Singh portrait">
-          <div class="portrait-ring">
-            <div class="portrait">
-              <img src="assets/mohit-profile.png" alt="Mohit Kumar Singh">
-            </div>
-          </div>
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-        </div>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Mohit Kumar Singh home">Mohit Kumar Singh</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+    <nav id="primary-nav" class="nav-links" aria-label="Primary navigation"><a href="#projects">Work</a><a href="#services">Expertise</a><a href="#about">About</a><a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">+</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero section-wrap" id="intro" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> UNITY DEVELOPER · XR EXPLORER</p>
+        <h1 id="hero-title">I build worlds.<br>You <span class="serif-word">step in.</span></h1>
+        <p class="hero-description">Hi, I’m <strong>Mohit Kumar Singh.</strong> I turn ideas into immersive experiences — from multiplayer games to the next dimension of AR & VR.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">+</span></a><a class="text-link" href="assets/documents/Mohit_Kumar_Singh_Resume.pdf" download>Download résumé <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"/></svg></a></div>
+        <div class="hero-proof"><div class="proof-mark" aria-hidden="true">◇</div><p>Currently crafting immersive learning at <strong>iXR Labs</strong></p></div>
       </div>
+      <div class="hero-art">
+        <div class="art-grid" aria-hidden="true"></div><div class="art-orbit orbit-a" aria-hidden="true"></div><div class="art-orbit orbit-b" aria-hidden="true"></div>
+        <span class="art-cross cross-a" aria-hidden="true">+</span><span class="art-cross cross-b" aria-hidden="true">+</span>
+        <div class="portrait-disc" aria-hidden="true"><span>CREATE. PLAY. REPEAT.</span></div>
+        <img class="hero-portrait" src="assets/images/profile/mohit-profile.png" alt="Mohit Kumar Singh" width="1080" height="1448" fetchpriority="high">
+        <div class="floating-label label-unity"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="m14 2 11 6v12l-11 6L3 20V8Zm0 0v12m11-6-11 6L3 8m11 6v12"/></svg><div>Built with Unity<span>Made for immersion</span></div></div>
+        <div class="floating-label label-code"><span aria-hidden="true">&lt;/&gt;</span> Code meets imagination</div>
+        <div class="art-caption"><span class="status-dot"></span> NOIDA / GURUGRAM, INDIA <span class="coordinates" aria-hidden="true">28.5355° N</span></div>
+      </div>
+      <div class="hero-bottom"><div class="hero-metrics"><p><strong>3+</strong><span>Years of Unity<br>development</span></p><p><strong>6+</strong><span>Projects across<br>games & web</span></p></div><a class="scroll-link" href="#projects">SCROLL TO EXPLORE <span aria-hidden="true">+</span></a></div>
     </section>
-
-    <section class="section services" id="services" aria-labelledby="services-title">
-      <div class="section-heading">
-        <p class="kicker">Services</p>
-        <h2 id="services-title">What I build</h2>
-      </div>
-      <div class="service-grid">
-        <article>
-          <i data-lucide="gamepad-2"></i>
-          <h3>Multiplayer Games</h3>
-          <p>Real-time Unity gameplay systems, race mechanics, interactive UI, and Photon Fusion networking.</p>
-        </article>
-        <article>
-          <i data-lucide="glasses"></i>
-          <h3>AR/VR Experiences</h3>
-          <p>Quest-focused immersive interactions using Meta SDK, mixed reality, and shared spatial anchors.</p>
-        </article>
-        <article>
-          <i data-lucide="cloud-cog"></i>
-          <h3>Cloud-Ready Apps</h3>
-          <p>PlayFab, Firebase, AWS S3 Addressables, authentication, analytics, and scalable asset workflows.</p>
-        </article>
-      </div>
+    <div class="stack-strip" aria-label="Core technologies"><div class="section-wrap"><span class="stack-label">MY CREATIVE TOOLKIT</span><span>Unity</span><b aria-hidden="true">✳</b><span>C#</span><b aria-hidden="true">✳</b><span>Photon Fusion</span><b aria-hidden="true">✳</b><span>Meta SDK</span><b aria-hidden="true">✳</b><span>Firebase</span><b aria-hidden="true">✳</b><span>AWS</span></div></div>
+    <section class="section section-wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-top"><div><p class="eyebrow">A FEW THINGS I’VE BUILT</p><h2 id="projects-title">Ideas, made <span class="muted-word">playable.</span></h2></div><p class="section-description">A selection of games, immersive worlds,<br>and connected experiences.</p></div>
+      <div class="project-toolbar"><div class="project-filters" role="group" aria-label="Filter projects"><button class="filter active" aria-pressed="true" data-filter="all">All work <span id="all-project-count">06</span></button><button class="filter" aria-pressed="false" data-filter="games">Games</button><button class="filter" aria-pressed="false" data-filter="xr">AR / VR</button><button class="filter" aria-pressed="false" data-filter="web">Web apps</button></div><span class="project-count" aria-live="polite">6 projects</span></div>
+      <div class="project-grid" id="project-grid"></div>
+      <noscript><p class="project-note">Enable JavaScript to explore the project gallery, or download my résumé above.</p></noscript>
+      <p class="project-note">Projects without a custom thumbnail use illustrative artwork. Open a project to explore its build and available media.</p>
     </section>
-
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="about-text">
-        <p class="kicker">About me</p>
-        <h2 id="about-title">Unity developer focused on immersive product craft.</h2>
-      </div>
-      <div class="about-details">
-        <p>
-          I am based in Noida/Gurugram and currently work as a Unity Developer at iXR Labs. I specialize in building
-          immersive, high-performance gaming and XR experiences, including AR/VR applications, multiplayer systems,
-          educational XR products, mobile games, and real-time web apps.
-        </p>
-        <p>
-          Alongside game development, I have hands-on experience across full-stack technologies such as Node.js,
-          React.js, JavaScript, Java, Hibernate, SQL, MongoDB, Firebase Realtime DB, Google Cloud, AWS, and RESTful APIs.
-        </p>
-        <div class="skill-cloud" aria-label="Technical skills">
-          <span>C#</span>
-          <span>Unity 2D/3D</span>
-          <span>Game Development</span>
-          <span>AR/VR</span>
-          <span>Multiplayer Games</span>
-          <span>Photon Fusion</span>
-          <span>Meta SDK</span>
-          <span>PlayFab</span>
-          <span>Firebase</span>
-          <span>Firebase Realtime DB</span>
-          <span>AWS S3</span>
-          <span>Google Cloud</span>
-          <span>REST APIs</span>
-          <span>Spatial Anchors</span>
-          <span>Ready Player Me</span>
-          <span>ScriptableObjects</span>
-          <span>DOTween</span>
-          <span>Socket.io</span>
-          <span>Node.js</span>
-          <span>React.js</span>
-          <span>JavaScript</span>
-          <span>Java</span>
-          <span>Hibernate</span>
-          <span>SQL</span>
-          <span>MongoDB</span>
-          <span>DBMS</span>
-          <span>Google Ads</span>
-          <span>Git</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section portfolio" id="projects" aria-labelledby="portfolio-title">
-      <div class="section-heading">
-        <p class="kicker">Portfolio</p>
-        <h2 id="portfolio-title">Selected projects</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card featured-project">
-          <div class="project-media magnet-media" aria-hidden="true">
-            <span></span><span></span><span></span><span></span>
-          </div>
-          <div>
-            <p class="project-type">Android Game</p>
-            <h3>Magnet Madness</h3>
-            <p class="project-date">Feb 2026 - Apr 2026</p>
-            <ul>
-              <li>Built a polished turn-based multiplayer Android game with timed turns, synchronized state handling, win-condition logic, and responsive drag-and-drop magnet interactions.</li>
-              <li>Implemented real-time collision detection and gameplay feedback so each move feels clear, physical, and easy to understand during competitive play.</li>
-              <li>Structured skins, currency, pricing, and player settings with ScriptableObjects to keep the game economy modular and easier to expand.</li>
-              <li>Created a responsive DOTween-powered UI with panel navigation, live updates, audio, haptics, and camera shake for stronger game feel.</li>
-            </ul>
-            <div class="mini-tags"><span>Unity</span><span>C#</span><span>DOTween</span><span>Photon Fusion</span><span>ScriptableObjects</span><span>Game Economy</span></div>
-          </div>
-        </article>
-        <article class="project-card">
-          <div class="project-media vr-media" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </div>
-          <div>
-            <p class="project-type">VR Quest App</p>
-            <h3>Engineering Marvels</h3>
-            <p>Educational mixed reality experience for Meta Quest where learners assemble engineering modules in an immersive workspace. The app supports shared multiplayer collaboration, cloud-backed progress, and spatial anchors for stable placement across sessions.</p>
-            <div class="mini-tags"><span>Unity XR</span><span>Meta SDK</span><span>Photon Fusion</span><span>Spatial Anchors</span><span>Firebase</span><span>Quest</span></div>
-          </div>
-        </article>
-        <article class="project-card">
-          <div class="project-media flappy-media" aria-hidden="true">
-            <span class="bird"></span><span class="pipe pipe-top"></span><span class="pipe pipe-bottom"></span>
-          </div>
-          <div>
-            <p class="project-type">Android Game</p>
-            <h3>Flappy Bird</h3>
-            <p class="project-date">Jan 2025</p>
-            <p>Arcade-style Android game focused on clean tap-to-fly controls, obstacle timing, scoring, pause/resume flow, restart handling, and stable game-state transitions from start screen to game over.</p>
-            <div class="mini-tags"><span>Unity</span><span>C#</span><span>2D Physics</span><span>Game State</span><span>Score System</span></div>
-          </div>
-        </article>
-        <article class="project-card">
-          <div class="project-media slot-media" aria-hidden="true">
-            <span>7</span><span>W</span><span>S</span>
-          </div>
-          <div>
-            <p class="project-type">Windows Game</p>
-            <h3>Slot Machine Game</h3>
-            <p>Windows slot machine game built in Unity with reel spinning, dynamic bet controls, balance validation, wild and scatter outcomes, partial-win rules, multiplier rewards, and bonus free-spin logic for a complete casino-style gameplay loop.</p>
-            <div class="mini-tags"><span>Unity</span><span>C#</span><span>Slot Logic</span><span>Betting System</span><span>Wild Symbols</span><span>Scatter Rewards</span><span>Free Spins</span></div>
-          </div>
-        </article>
-        <article class="project-card compact-project">
-          <div>
-            <p class="project-type">Web App</p>
-            <h3>Realtime Chat App</h3>
-            <p class="project-date">Mar 2023</p>
-            <p>Real-time multi-user chat application using Socket.io for instant two-way communication. It includes a join-name flow, active connection handling, message broadcasting, and a lightweight client-server architecture for fast live updates.</p>
-            <div class="mini-tags"><span>JavaScript</span><span>Node.js</span><span>Socket.io</span><span>Realtime Events</span><span>Client-Server</span></div>
-          </div>
-        </article>
-        <article class="project-card compact-project">
-          <div>
-            <p class="project-type">Web App</p>
-            <h3>Weather App</h3>
-            <p class="project-date">Aug 2022 - Sep 2022</p>
-            <p>Weather web app using the OpenWeatherMap API to fetch real-time conditions by city search or current location. It presents key weather details through a simple, responsive interface designed for quick lookup.</p>
-            <div class="mini-tags"><span>JavaScript</span><span>REST APIs</span><span>OpenWeatherMap</span><span>Geolocation</span><span>API Integration</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section credentials" aria-labelledby="credentials-title">
-      <div class="section-heading">
-        <p class="kicker">Credentials</p>
-        <h2 id="credentials-title">Certifications and strengths</h2>
-      </div>
-      <div class="credential-grid">
-        <article>
-          <h3>Certifications</h3>
-          <p>JavaScript, SQL, Java, Fundamentals of HTML, Workshop on Blockchain, EF SET English Certificate, Codegoda Programming Competition, and Innovate India Coding Championship.</p>
-        </article>
-        <article>
-          <h3>Languages</h3>
-          <p>English with professional working proficiency and Hindi with full professional proficiency.</p>
-        </article>
-        <article>
-          <h3>Core Courses</h3>
-          <p>Node.js, JavaScript, React.js, Software Engineering, DBMS, Java, Hibernate, SQL, cloud services, and computer application fundamentals.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section education" aria-labelledby="education-title">
-      <div class="section-heading">
-        <p class="kicker">Education</p>
-        <h2 id="education-title">Academic background</h2>
-      </div>
-      <div class="education-list">
-        <article>
-          <span>2021 - 2023</span>
-          <h3>Master of Computer Application</h3>
-          <p>G. L. Bajaj Institute of Technology & Management, Greater Noida</p>
-        </article>
-        <article>
-          <span>2018 - 2021</span>
-          <h3>Bachelor of Computer Application</h3>
-          <p>Chaudhary Charan Singh University, Meerut</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <p class="kicker">Contact me</p>
-      <h2 id="contact-title">Ready to create an immersive experience?</h2>
-      <p>Available for Unity, AR/VR, multiplayer, and mixed reality opportunities.</p>
-      <div class="contact-actions">
-        <a class="button primary" href="mailto:Mohitkumarsingh.india@gmail.com">Email Me</a>
-        <a class="button ghost" href="tel:+919759734847">Call</a>
-      </div>
-    </section>
+    <section class="expertise-section" id="services" aria-labelledby="services-title"><div class="section section-wrap"><div class="section-top"><div><p class="eyebrow">THE INTERSECTION OF CRAFT & CODE</p><h2 id="services-title">Built to feel <span class="muted-word">different.</span></h2></div><p class="section-description">From the first interaction to the systems<br>that make it all work.</p></div><div class="service-grid"><article><div class="service-symbol" aria-hidden="true">⌘</div><h3>Multiplayer & games</h3><p>Gameplay that feels responsive. Systems that stay in sync. I build real-time Unity experiences with thoughtful mechanics and polished player feedback.</p><span>Unity · C# · Photon Fusion · DOTween</span></article><article><div class="service-symbol" aria-hidden="true">◎</div><h3>Immersive AR / VR</h3><p>Experiences that go beyond the screen. Interactive learning, shared spaces, and mixed reality applications built for Meta Quest.</p><span>Meta SDK · Unity XR · Spatial Anchors</span></article><article><div class="service-symbol" aria-hidden="true">⌁</div><h3>Connected experiences</h3><p>The infrastructure behind the interaction. Authentication, live data, cloud assets, and APIs that bring the whole experience together.</p><span>Firebase · PlayFab · AWS S3 · REST APIs</span></article></div></div></section>
+    <section class="section section-wrap about" id="about" aria-labelledby="about-title"><div class="about-heading"><p class="eyebrow">THE HUMAN BEHIND THE BUILD</p><h2 id="about-title">Curious mind.<br>Developer hands.<br><span class="serif-word">Player at heart.</span></h2><div class="about-signature">Mohit Kumar Singh<span>Unity Developer, iXR Labs</span></div><a class="text-link" href="assets/documents/Mohit_Kumar_Singh_Resume.pdf" download>Get the full résumé <span aria-hidden="true">+</span></a></div><div class="about-details"><p class="about-lead">I like making complex technology feel natural to the person using it.</p><p>Based in Noida / Gurugram, I’m a Unity Developer at iXR Labs, building immersive educational products, AR/VR applications, and multiplayer experiences. My work blends gameplay engineering with a careful eye for interaction and performance.</p><p>Beyond Unity, I work across the web and cloud — connecting real-time applications with the services, data, and tools they need.</p><div class="skill-groups"><div><h3>Real-time & immersive</h3><p>C# / Unity 2D & 3D / Photon Fusion / Meta SDK / Spatial Anchors / Ready Player Me / ScriptableObjects / DOTween</p></div><div><h3>Web & cloud</h3><p>Node.js / React / JavaScript / Socket.io / Firebase / PlayFab / AWS S3 / Google Cloud / REST APIs / Git</p></div><div><h3>Data & foundations</h3><p>Java / Hibernate / SQL / MongoDB / DBMS / Software Engineering</p></div></div></div></section>
+    <section class="section-wrap background-section" aria-labelledby="background-title"><div><p class="eyebrow">ALWAYS LEARNING</p><h2 id="background-title">Strong foundations.<br><span class="muted-word">New possibilities.</span></h2></div><div class="background-details"><article><span class="timeline-date">2021 — 2023</span><h3>Master of Computer Application</h3><p>G. L. Bajaj Institute of Technology & Management, Greater Noida</p></article><article><span class="timeline-date">2018 — 2021</span><h3>Bachelor of Computer Application</h3><p>Chaudhary Charan Singh University, Meerut</p></article><details><summary>Certifications & more <span aria-hidden="true">+</span></summary><p>JavaScript, SQL, Java, Fundamentals of HTML, Workshop on Blockchain, EF SET English Certificate, Codegoda Programming Competition, and Innovate India Coding Championship.</p><p>English — professional working proficiency.<br>Hindi — full professional proficiency.</p></details></div></section>
+    <section class="contact section-wrap" id="contact" aria-labelledby="contact-title"><div class="contact-top"><p class="eyebrow"><span class="status-dot"></span> OPEN TO NEW CONVERSATIONS</p><span class="contact-star" aria-hidden="true">✳</span></div><h2 id="contact-title">Have a world<br>in <span class="serif-word">mind?</span></h2><div class="contact-bottom"><p>Let’s make something people<br>can step into, play, and remember.</p><a class="button primary" href="mailto:Mohitkumarsingh.india@gmail.com">Let’s build it together <span aria-hidden="true">+</span></a></div><div class="contact-links"><a href="mailto:Mohitkumarsingh.india@gmail.com">Mohitkumarsingh.india@gmail.com</a><button id="copy-email" type="button" aria-label="Copy email address">Copy email</button><a href="tel:+919759734847">+91 97597 34847</a></div><p id="copy-status" class="copy-status" role="status"></p></section>
   </main>
-
-  <footer class="footer">
-    <span>© <span id="year"></span> Mohit Kumar Singh</span>
-    <a href="#top" aria-label="Back to top"><i data-lucide="arrow-up"></i></a>
-  </footer>
-
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script src="script.js"></script>
+  <footer class="footer section-wrap"><a class="logo" href="#top" aria-label="Back to top">Mohit Kumar Singh</a><span>© <span id="year">2026</span> Mohit Kumar Singh</span><div><a href="https://www.linkedin.com/in/mohit-kumar-singh-01/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/MohitKumarSingh-01" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#top">Back to top +</a></div></footer>
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Close project details">×</button><p class="eyebrow" id="dialog-type"></p><h2 id="dialog-title"></h2><p class="dialog-date" id="dialog-date"></p><p class="dialog-intro" id="dialog-intro"></p><div class="project-media-controls" id="project-media-controls" aria-label="Project media" hidden></div><div class="project-player" id="project-player" hidden></div><p class="media-status" id="media-status" role="status"></p><div class="project-resource-links" id="project-resource-links" hidden></div><h3>Inside the build</h3><ul id="dialog-details"></ul><div class="tags" id="dialog-tags"></div><a class="text-link" href="mailto:Mohitkumarsingh.india@gmail.com">Let’s talk about this project <span aria-hidden="true">+</span></a></dialog>
 </body>
 </html>
