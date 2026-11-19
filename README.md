@@ -79,9 +79,3 @@ Recommended image: 1200 × 675 pixels. Leave the path empty to keep the illustra
 ## Add videos and playable builds
 
 Project objects already include optional `video`, `webglUrl`, and `links` fields. They are empty by default because no real project videos or compiled Unity builds have been supplied. The controls appear after you configure them. See the complete examples in [the media guide](docs/MEDIA-GUIDE.md).
-
-## Publish on GitHub Pages
-
-Upload this folder's **contents** to your repository. Keep `index.html` at the root. In **Settings → Pages**, choose **Deploy from a branch → main → / (root)**. For your main personal address, name the repository `YOUR_USERNAME.github.io`. Follow [the deployment guide](docs/GITHUB-PAGES.md) for the full setup.
-
-Project information is in `assets/data/projects.js`; other page content is in `index.html`. Fonts use Google Fonts with system fallbacks. No repository has been created or published by this change.
